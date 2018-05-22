@@ -15,5 +15,10 @@
     "express-handlebars": "^3.0.0",
     "nodemailer": "^4.6.4",
     "sendgrid": "^5.2.3"
+  },
+
+  "engines": {
+  "node": "8.11.1",
+  "npm": "6.0.1"
   }
 }
