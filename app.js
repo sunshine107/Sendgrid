@@ -61,10 +61,7 @@ app.post('/sendemail', function(req, res) {
       html: html
     };
     sgMail.send(msg, (error, info)=>{
-      if (error) {
-        return console.log(error);
-    }
-    console.log('Message sent: %s', 'Success');
+        res.status(200).send({'error': error});
     });
 
   });
