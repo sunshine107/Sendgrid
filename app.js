@@ -17,7 +17,7 @@ app.use(express.static(path.join(__dirname, 'views')));
  
 //app.use('/api', api); // Set our api routes 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '/views/index.html'));
+  //res.sendFile(path.join(__dirname, '/views/index.html'));
 }); //Catch all other routes and return the index file
 
 // Add headers
@@ -40,7 +40,7 @@ app.use(function (req, res, next) {
     next();
 });
 
-app.post('/myaction', function(req, res) {
+app.post('/sendemail', function(req, res) {
     //res.send('You sent the name "' + req.body.name + '".');
     var email = req.body.email;
     var password = req.body.password;
