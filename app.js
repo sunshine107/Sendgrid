@@ -46,7 +46,7 @@ app.post('/sendemail', function(req, res) {
     var password = req.body.password;
     console.log(req.body);
 
-    var html = "<h3>Thank you for signing up for HTS Active Alert app. </h3><p>Your username and temporary password are:<p>"+"<p style='margin-left:8px;'>Email:" + email + "</p><p style='margin-left:8px;'>Password:" + password 
+    var html = "<h3>Thank you for signing up for HTS Active Alert app. </h3><p>Your username and temporary password are:<p>"+"<p >" + email + "</p><p>" + password 
       + "</p><p>Please change your password at your earliest convenience for security purposes. You can do this by selecting 'Forgot Password' from the sign in screen and entering your email into the recovery field.</p><br>"
       + "Thanks.";
    
