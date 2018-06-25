@@ -51,7 +51,7 @@ app.post('/sendemail', function(req, res) {
       + "Thanks.";
    
    const sgMail = require('@sendgrid/mail');
-    sgMail.setApiKey("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");
+    sgMail.setApiKey("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");
     const msg = {
       to: email,
       from: 'no-reply@htsactivealertsystems.com',
